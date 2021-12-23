@@ -43,3 +43,35 @@ function formatTimes() {
         $(classes[i]).addClass("future");
     }
 }
+
+$(".saveBtn").on("click", function () {
+    var dI = $(this).data('index');
+    notes[dI] = $(classes[dI]).val();
+    localStorage.setItem('notes', JSON.stringify(notes))
+    alert("saved")
+})
+
+grabData();
+
+function grabData() {
+    notes = JSON.parse(localStorage.getItem("notes"));
+    if (notes == null) {
+        notes = ["", "", "", "", "", "", "", "", ""];
+        return;
+    }
+    for (i = 0; i < classes.length; i++) {
+        ($(classes[i])).val(notes[i]);
+    }
+}
+
+$(".clear").on("click", function () {
+    clearData() 
+})
+function clearData() {
+    var confirmDelete = confirm("Are you sure?");
+    if (confirmDelete == true) {
+        notes = ["", "", "", "", "", "", "", "", ""];
+        localStorage.setItem('notes', JSON.stringify(notes));
+        grabData();
+    }
+}
