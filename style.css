@@ -1,24 +1,30 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
   line-height: 1;
+  background-color:aliceblue;
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  color: whitesmoke;
+  border-left: 5px solid white;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color:rgb(46, 46, 90);
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid rgb(46, 46, 90);
+}
+
+.display-3 {
+  text-shadow: grey 3px 3px;
+  color: rgb(46, 46, 90)
 }
 
 .description {
@@ -32,40 +38,75 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+  border-top: 2px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: rgb(46, 46, 90);
+  color: whitesmoke;
+  text-align: center;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color:rgb(46, 46, 90);
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: rgb(46, 46, 90);
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: rgb(46, 46, 90);
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color:rgb(46, 46, 90);
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.saveBtn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+.bottom {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 50px;
 }
+
+.saveAll {
+  background: rgb(46, 46, 90);
+  color: whitesmoke;
+  border-radius: 5px 5px;
+}
+
+.saveAll:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.clear {
+  background: rgb(46, 46, 90);
+  color: whitesmoke;
+  border-radius: 5px 5px;
+}
+
+.clear:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+
+ 
+

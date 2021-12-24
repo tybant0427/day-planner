@@ -75,3 +75,11 @@ function clearData() {
         grabData();
     }
 }
+
+$("saveAll").on("click", function () {
+    for (i = 0; i < classes. length; i++) {
+        notes[i] = $(classes[i]).val();
+    }
+    localStorage.setItem('notes', JSON.stringify(notes))
+    alert("All Items Saved")
+})
